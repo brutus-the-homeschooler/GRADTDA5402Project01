@@ -16,7 +16,7 @@ This CSV file contains NBA team records and was generated from basketball-refere
 
 This Excel file contains NBA team statistics for the current season. It was generated from nba.com on 2/12/2024 and includes data up to 02/11/2024.
 
-### 4. Jimmy Dwyer GRADTDA 5401 Project01.R
+### 4. Jimmy Dwyer GRADTDA 5402 Project01.R
 
 This R file contains the code for the histograms, model, and predictions outlined in the paper.
 
