@@ -8,6 +8,16 @@ library(dplyr)
 library(ggplot2)
 
 # Load the files
+url_team_data <- "https://raw.githubusercontent.com/brutus-the-homeschooler/GRADTDA5402Project01/main/NBA_teamstats.txt"
+url_team_record <- "https://raw.githubusercontent.com/brutus-the-homeschooler/GRADTDA5402Project01/main/Nba_team_records.csv"
+url_current_season_data <- "https://raw.githubusercontent.com/brutus-the-homeschooler/GRADTDA5402Project01/main/current_season.xlsx"
+
+# Download the files
+download.file(url_team_data, destfile = "NBA_teamstats.txt", method = "auto")
+download.file(url_team_record, destfile = "Nba_team_records.csv", method = "auto")
+download.file(url_current_season_data, destfile = "current_season.xlsx", method = "auto")
+
+# Now you can read the files into R
 team_data <- read.table("NBA_teamstats.txt", header = TRUE, sep = "\t")
 team_record <- read.csv("Nba_team_records.csv")
 current_season_data <- read_excel("current_season.xlsx")
